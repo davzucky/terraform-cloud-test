@@ -13,5 +13,10 @@ terraform {
 module "test" {
   source = "../../infrasctruture"
   env    = "uat"
+  name   = "${var.name}"
+}
+
+variable "name" {
 
 }
+
